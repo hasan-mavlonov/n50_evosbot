@@ -1,0 +1,78 @@
+# English translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-11-22 03:28+0500\n"
+"PO-Revision-Date: 2024-11-22 03:16+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: handlers/users/start.py:14
+msgid "start"
+msgstr ""
+
+#: handlers/users/start.py:16
+msgid "Choose a language"
+msgstr ""
+
+#: handlers/users/start.py:27
+msgid "Please enter your full name:"
+msgstr ""
+
+#: handlers/users/start.py:46
+msgid "✍️ Leave Feedback"
+msgstr ""
+
+#: handlers/users/start.py:48
+msgid "Enter your feedback:"
+msgstr ""
+
+#: handlers/users/start.py:54
+msgid "Thank you your feedback was sent to admins!"
+msgstr ""
+
+#: handlers/users/start.py:66
+msgid "🍴Menu"
+msgstr ""
+
+#: handlers/users/start.py:68
+msgid "Please share your location to see nearby menus:"
+msgstr ""
+
+#: handlers/users/start.py:72
+msgid "⬅️ Back to Main Menu"
+msgstr ""
+
+#: handlers/users/start.py:74
+msgid "Choose one of the options"
+msgstr ""
+
+#: handlers/users/start.py:78
+msgid "location"
+msgstr ""
+
+#: handlers/users/start.py:96
+msgid "Failed to retrieve location. Please try again."
+msgstr ""
+
+#: handlers/users/start.py:101
+msgid "✅ Confirm"
+msgstr ""
+
+#: handlers/users/start.py:104
+msgid ""
+"Thank you! Your location has been confirmed. You can now proceed with the"
+" menu."
+msgstr ""
+

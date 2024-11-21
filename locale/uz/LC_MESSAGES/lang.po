@@ -1,0 +1,80 @@
+# Uzbek translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-11-22 03:28+0500\n"
+"PO-Revision-Date: 2024-11-22 03:14+0500\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uz\n"
+"Language-Team: uz <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: handlers/users/start.py:14
+msgid "start"
+msgstr ""
+
+#: handlers/users/start.py:16
+msgid "Choose a language"
+msgstr "Tilni tanlang"
+
+#: handlers/users/start.py:27
+msgid "Please enter your full name:"
+msgstr "Iltimos, to'liq ismingizni kiriting:"
+
+#: handlers/users/start.py:46
+msgid "✍️ Leave Feedback"
+msgstr "✍️ Fikr qoldiring"
+
+#: handlers/users/start.py:48
+msgid "Enter your feedback:"
+msgstr "Fikringizni kiriting:"
+
+#: handlers/users/start.py:54
+msgid "Thank you your feedback was sent to admins!"
+msgstr "Rahmat! Fikringiz administratorlarga yuborildi!"
+
+#: handlers/users/start.py:66
+msgid "🍴Menu"
+msgstr "🍴Menyu"
+
+#: handlers/users/start.py:68
+msgid "Please share your location to see nearby menus:"
+msgstr "Yaqin atrofdagi menyularni ko'rish uchun joylashuvingizni ulashing:"
+
+#: handlers/users/start.py:72
+msgid "⬅️ Back to Main Menu"
+msgstr "⬅️ Asosiy menyuga qaytish"
+
+#: handlers/users/start.py:74
+msgid "Choose one of the options"
+msgstr "Variantlardan birini tanlang"
+
+#: handlers/users/start.py:78
+msgid "location"
+msgstr "joylashuv"
+
+#: handlers/users/start.py:96
+msgid "Failed to retrieve location. Please try again."
+msgstr "Joylashuvni olish muvaffaqiyatsiz tugadi. Iltimos, yana urinib ko'ring."
+
+#: handlers/users/start.py:101
+msgid "✅ Confirm"
+msgstr "✅ Tasdiqlash"
+
+#: handlers/users/start.py:104
+msgid ""
+"Thank you! Your location has been confirmed. You can now proceed with the"
+" menu."
+msgstr ""
+"Rahmat! Joylashuvingiz tasdiqlandi. Endi menyu bilan davom etishingiz "
+"mumkin."
+
