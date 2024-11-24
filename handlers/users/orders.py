@@ -22,7 +22,6 @@ async def product_selection(message: types.Message):
     await message.answer(f"Do you want to add '{product_name}' to your cart?", reply_markup=markup)
 
     # Store the selected product for later confirmation
-    # Make sure the cart for this user is initialized as a list, not a dict
     if user_cart.get(message.from_user.id) is None:
         user_cart[message.from_user.id] = []  # Initialize the user's cart as an empty list
     user_cart[message.from_user.id].append({'product': product_name, 'action': 'pending'})
@@ -52,6 +51,12 @@ async def confirm_add_to_cart(message: types.Message):
 @dp.message_handler(text=["🛒Cart"])
 async def show_cart(message: types.Message):
     user_id = message.from_user.id
+    markup = ReplyKeyboardMarkup(resize_keyboard=True)
+    markup.add(
+        KeyboardButton("🛒 Buy Now"),
+        KeyboardButton("⬅️ Back to Menu")
+    )
+
     if user_id in user_cart and user_cart[user_id]:  # Check if the user has items in the cart
         cart_items = [item['product'] for item in user_cart[user_id] if item['action'] == 'added']
         if cart_items:
@@ -62,4 +67,25 @@ async def show_cart(message: types.Message):
     else:
         cart_message = "🛒 Your cart is empty."
 
-    await message.answer(cart_message, reply_markup=await menu_keyboard())
+    await message.answer(cart_message, reply_markup=markup)
+
+
+@dp.message_handler(text=["🛒 Buy Now"])
+async def buy_now_handler(message: types.Message):
+    user_id = message.from_user.id
+
+    if user_id in user_cart and any(item['action'] == 'added' for item in user_cart[user_id]):
+        # Process the order
+        cart_items = [item['product'] for item in user_cart[user_id] if item['action'] == 'added']
+        order_summary = "\n".join([f"- {item}" for item in cart_items])
+
+        await message.answer(
+            f"✅ Thank you for your order! Here is what you ordered:\n{order_summary}\n\nYour cart has been emptied.",
+            reply_markup=await menu_keyboard()
+        )
+
+        # Empty the user's cart
+        user_cart[user_id] = []
+    else:
+        await message.answer("🛒 Your cart is empty. Add items to your cart before placing an order.",
+                             reply_markup=await menu_keyboard())
